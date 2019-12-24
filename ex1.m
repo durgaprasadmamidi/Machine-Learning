@@ -3,9 +3,7 @@ X=data(:,1);
 y=data(:,2);
 m=length(y);
 
-plot(X,y,'rx','MarkerSize',10);
-ylabel('Profit in $10,000s');  
-xlabel('Population of City in 10,000s');
+plotData(X,y);
 
 X=[ones(m,1),data(:,1)];
 theta=zeros(2,1);
